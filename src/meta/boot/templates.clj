@@ -47,9 +47,6 @@
   "Generate project files from templates."
   [n namespaces VAL [[str str str]] "Project namespaces to generate."]
   (boot/with-pre-wrap fs
-    (let [gen-ns   (:namespaces *opts*)
-          paths    (map mutil/ns->path gen-ns)
-          tmp      (boot/tmp-dir!)
     (let [tmp      (boot/tmp-dir!)
           in-files (boot/input-files fs)]
       (util/info "Compiling project template files...\n")
