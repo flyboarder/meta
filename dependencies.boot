@@ -23,6 +23,6 @@
  [degree9/nodejs-cljs         "0.1.0"]
  [degree9/meta-template       "0.3.0-SNAPSHOT"]
  [hoplon/hoplon               "7.2.0"]
- [hoplon/brew                 "0.3.0"]
+ [hoplon/brew                 "7.2.0-SNAPSHOT"]
  [degree9/material-hl         "0.10.0"]
  [degree9/uikit-hl            "3.0.0-SNAPSHOT"]]

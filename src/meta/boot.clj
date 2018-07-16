@@ -144,7 +144,7 @@
                      impl/info              {:message "Running Workflow...: develop"}
                      ver/version            {:develop true :pre-release 'snapshot}
                      cljs/cljs              {:optimizations :none})
-      build      (boot/task-options!
+      build        (boot/task-options!
                      impl/info              {:message "Running Workflow...: build"})
       generate     (boot/task-options!
                      impl/info              {:message "Running Workflow...: generate"}
