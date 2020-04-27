@@ -39,8 +39,8 @@
 (boot/deftask standup
   "Standup cross project builds."
   []
-  (comp (ver/version)
-        (dependencies)))
+  (comp (ver/version)))
+        ;(dependencies)))
         ;(shadow/server)))
 
 (boot/deftask client
