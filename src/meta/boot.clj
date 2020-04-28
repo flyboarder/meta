@@ -108,8 +108,7 @@
   "Build project for release."
   []
   (boot/task-options!
-    impl/info  {:message "Running Workflow...: compile"}
-    njs/nodejs {:init-fn 'app.server/init})
+    impl/info  {:message "Running Workflow...: compile"})
   (comp
     (info)
     (standup)
@@ -124,8 +123,7 @@
     impl/info   {:message "Running Workflow...: develop"}
     ver/version {:develop true :pre-release 'degree9.boot-semver/snapshot}
     server      {:develop true}
-    client      {:develop true}
-    njs/nodejs  {:init-fn 'app.server/init})
+    client      {:develop true})
   (comp
     (info)
     (sync-repo)
@@ -159,8 +157,7 @@
   (boot/task-options!
     impl/info  {:message "Running Workflow...: microservice"}
     ver/version {:develop true :pre-release 'degree9.boot-semver/snapshot}
-    server      {:develop true}
-    njs/nodejs  {:init-fn 'app.server/init})
+    server      {:develop true})
   (comp
     (info)
     (sync-repo)
