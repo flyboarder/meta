@@ -13,7 +13,7 @@
                           ;[degree9/covenant            "0.1.0-SNAPSHOT"]
                           ;[degree9/boot-docker         "0.1.0-SNAPSHOT"]
                           [degree9/boot-nodejs         "1.4.0"]
-                          [degree9/boot-npm            "1.11.0"]
+                          [degree9/boot-npm            "1.12.0-SNAPSHOT"]
                           ;[degree9/boot-exec           "1.1.0-SNAPSHOT"]
                           [degree9/boot-semver         "1.8.0"]
                           [degree9/boot-semgit         "1.3.0"]
