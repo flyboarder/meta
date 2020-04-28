@@ -17,7 +17,7 @@
                           ;[degree9/boot-exec           "1.1.0-SNAPSHOT"]
                           [degree9/boot-semver         "1.8.0"]
                           [degree9/boot-semgit         "1.3.0"]
-                          [degree9/boot-shadow         "2.8.14-0"]
+                          [degree9/boot-shadow         "2.8.107-0"]
                           ;[degree9/boot-electron       "0.2.0"]
                           [degree9/boot-welcome        "1.0.0"]
                           ;[degree9/electron-cljs       "0.1.0"]
