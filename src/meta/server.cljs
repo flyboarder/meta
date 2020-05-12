@@ -43,8 +43,8 @@
 (defn with-error-handler [app]
   (debug "Loading server Error Handler api")
   (-> app
-    exp/not-found
-    exp/error-handler))
+    (exp/not-found #js{:verbose false})
+    (exp/error-handler)))
 
 (defn using [app path svc]
   (debug "Passing app.use call to feathers")
