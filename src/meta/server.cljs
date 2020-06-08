@@ -18,11 +18,11 @@
 (defn with-defaults [app]
   (debug "Loading server defaults")
   (-> app
-    (exp/express)
-    (config/configuration)
-    (exp/json)
-    (exp/urlencoded #js{:extended true})
-    (exp/static)))
+      (exp/express)
+      (config/configuration)
+      (exp/json)
+      (exp/urlencoded #js{:extended true})
+      (exp/static)))
 
 (defn with-rest [app]
   (debug "Loading server REST api")
@@ -33,8 +33,18 @@
   (socketio/socketio app))
 
 (defn with-authentication [app]
-  (debug "Loading server Authentication api")
-  (auth/authentication app))
+  (debug "Loading server Authentication JWT api")
+  (-> app
+      (auth/authentication)
+      (auth/authentication-jwt)))
+
+(defn with-authentication-local [app]
+  (debug "Loading server Authentication Local api")
+  (auth/authentication-local app))
+
+(defn with-authentication-oauth [app]
+  (debug "Loading server Authentication OAuth api")
+  (auth/authentication-oauth app))
 
 (defn with-channels [app]
   (debug "Loading server Channels api")
